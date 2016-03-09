@@ -3,7 +3,6 @@
 Core for all social media related functionality for Solidus.
 
 The `solidus_social` gem handles authorization, account creation and association through social media sources such as Twitter and Facebook.
----
 
 ## Setup for Production
 

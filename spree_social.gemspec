@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_runtime_dependency 'solidus_core', [">= 1.1.0.pre", "<= 1.4.0"]
+  s.add_runtime_dependency 'solidus_core', [">= 1.1.0.pre", "< 2.0"]
   s.add_runtime_dependency 'omniauth'
   s.add_runtime_dependency 'oa-core'
   s.add_runtime_dependency 'omniauth-twitter'
@@ -30,14 +30,15 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'omniauth-google-oauth2'
   s.add_runtime_dependency 'omniauth-amazon'
 
-  s.add_development_dependency 'capybara', '~> 2.4.1'
+  s.add_development_dependency 'capybara', '~> 2.18.0'
   s.add_development_dependency 'database_cleaner', '1.3.0'
   s.add_development_dependency 'ffaker'
   s.add_development_dependency 'rspec-rails', '~> 3.1.0'
   s.add_development_dependency 'factory_girl', '~> 4.4'
   s.add_development_dependency 'pry-rails'
   s.add_development_dependency 'selenium-webdriver', '>= 2.41.0'
-  s.add_development_dependency 'poltergeist', '~> 1.5.0'
+  s.add_development_dependency 'chromedriver-helper'
+  s.add_development_dependency 'poltergeist', '~> 1.18.1'
   s.add_development_dependency 'simplecov', '~> 0.9.0'
   s.add_development_dependency 'sqlite3', '~> 1.3.10'
   s.add_development_dependency 'coffee-rails', '~> 4.0.0'

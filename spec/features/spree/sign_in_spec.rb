@@ -26,11 +26,11 @@ RSpec.feature 'signing in using Omniauth', :js do
     scenario 'going to sign in' do
       visit spree.root_path
       click_link 'Login'
-      find('a[title="Login with facebook"]').trigger('click')
+      click_on "Login with facebook"
       expect(page).to have_text 'You are now signed in with your facebook account.'
       click_link 'Logout'
       click_link 'Login'
-      find('a[title="Login with facebook"]').trigger('click')
+      click_on "Login with facebook"
       expect(page).to have_text 'You are now signed in with your facebook account.'
     end
 
@@ -38,7 +38,7 @@ RSpec.feature 'signing in using Omniauth', :js do
     scenario "attempting to view 'My Account' works" do
       visit spree.root_path
       click_link 'Login'
-      find('a[title="Login with facebook"]').trigger('click')
+      click_on "Login with facebook"
       expect(page).to have_text 'You are now signed in with your facebook account.'
       click_link 'My Account'
       expect(page).to have_text 'My Account'
@@ -71,7 +71,7 @@ RSpec.feature 'signing in using Omniauth', :js do
     scenario 'going to sign in' do
       visit spree.root_path
       click_link 'Login'
-      find('a[title="Login with twitter"]').trigger('click')
+      click_on "Login with twitter"
       expect(page).to have_text 'Please confirm your email address to continue'.upcase
       fill_in 'Email', with: 'user@example.com'
       click_button 'Create'

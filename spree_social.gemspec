@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'omniauth-twitter'
   s.add_runtime_dependency 'omniauth-facebook'
   s.add_runtime_dependency 'omniauth-github'
-  s.add_runtime_dependency 'omniauth-google-oauth2', '<= 0.6.0'
+  s.add_runtime_dependency 'omniauth-google-oauth2', '>= 0.6.0'
   s.add_runtime_dependency 'omniauth-amazon'
 
   s.add_development_dependency 'capybara', '~> 2.18.0'
